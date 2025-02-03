@@ -4,20 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- --------- UNICONS ---------- -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
-    <!-- --------- CSS ---------- -->
+   
     <link rel="stylesheet" href="style.css">
 
-    <!-- --------- FAVICON ---------- -->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
 
     <title>Portfolio | BIGSAMOFAFRICA</title>
 </head>
 <body>
    <div class="container">
-    <!-- --------------- HEADER --------------- -->
       <nav id="header">
         <div class="nav-logo">
             <p class="nav-name">BIG SAM</p>
@@ -52,9 +49,9 @@
       </nav>
 
 
-    <!-- -------------- MAIN ---------------- -->
+   
     <main class="wrapper">
-       <!-- -------------- FEATURED BOX ---------------- -->
+       
        <section class="featured-box" id="home">
           <div class="featured-text">
             <div class="featured-text-card">
@@ -76,7 +73,10 @@
                 <div class="icon"><i class="uil uil-instagram"></i></div>
                 <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
                 <div class="icon"><i class="uil uil-dribbble"></i></div>
-                <div class="icon"><i class="uil uil-github-alt"></i></div>
+                <a href="https://github.com/BIGSAMOFAFRICA" target="_blank">
+                    <div class="icon"><i class="uil uil-github-alt"></i></div>
+                  </a>
+                  
             </div>
           </div>
           <div class="featured-image">
@@ -92,7 +92,7 @@
           </div>
 
        </section>
-       <!-- -------------- ABOUT BOX ---------------- -->
+     
        <section class="section" id="about">
           <div class="top-header">
             <h1>About Me</h1>
@@ -153,7 +153,7 @@
           </div>
        </section>
 
-       <!-- -------------- PROJECT BOX ---------------- -->
+       
 
        <section class="section" id="projects">
           <div class="top-header">
@@ -178,7 +178,7 @@
           </div>
        </section>
 
-       <!-- -------------- CONTACT BOX ---------------- -->
+       
 
        <section class="section" id="contact">
           <div class="top-header">
@@ -194,17 +194,21 @@
                 </div>
              </div>
              <div class="col">
-                <div class="form-control">
-                    <div class="form-inputs">
-                        <input type="text" class="input-field" placeholder="Name">
-                        <input type="text" class="input-field" placeholder="Email">
+                <form id="contact-form">
+                    <div class="form-control">
+                        <div class="form-inputs">
+                            <input type="text" class="input-field" placeholder="Name" name="name" required>
+                            <input type="email" class="input-field" placeholder="Email" name="email" required>
+                        </div>
+                        <div class="text-area">
+                            <textarea placeholder="Message" name="message" required></textarea>
+                        </div>
+                        <div class="form-button">
+                            <button type="submit" class="btn">Send <i class="uil uil-message"></i></button>
+                        </div>
                     </div>
-                    <div class="text-area">
-                        <textarea placeholder="Message"></textarea>
-                    </div>
-                    <div class="form-button">
-                        <button class="btn">Send <i class="uil uil-message"></i></button>
-                    </div>
+                </form>
+            </div>
                 </div>
              </div>
           </div>
@@ -213,7 +217,7 @@
     </main>
 
 
-    <!-- --------------- FOOTER --------------- -->
+  
     <footer>
         <div class="top-footer">
             <p>BIG SAM .</p>
@@ -250,13 +254,13 @@
 
 
 
-    <!-- ----- TYPING JS Link ----- -->
+   
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
-       <!-- ----- SCROLL REVEAL JS Link----- -->
+    
     <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- ----- MAIN JS ----- -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
     <script src="script.js"></script>
 </body>
 </html>

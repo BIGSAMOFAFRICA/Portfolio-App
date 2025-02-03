@@ -1,4 +1,22 @@
-/* ----- NAVIGATION BAR FUNCTION ----- */
+document.addEventListener("DOMContentLoaded", function () {
+  emailjs.init("jzVPogwgUk_Gcr7Cc"); 
+
+  document.getElementById("contact-form").addEventListener("submit", function (event) {
+      event.preventDefault(); 
+
+      emailjs.sendForm("service_b8nws2h", "template_4vwldg9", this)
+          .then(response => {
+              alert("✅ Message sent successfully!");
+              this.reset(); 
+          })
+          .catch(error => {
+              alert("❌ Failed to send message. Please try again.");
+              console.error("EmailJS Error:", error);
+          });
+  });
+});
+
+
 function myMenuFunction(){
     var menuBtn = document.getElementById("myNavMenu");
 
@@ -9,7 +27,7 @@ function myMenuFunction(){
     }
   }
 
-/* ----- ADD SHADOW ON NAVIGATION BAR WHILE SCROLLING ----- */
+
   window.onscroll = function() {headerShadow()};
 
   function headerShadow() {
@@ -31,9 +49,9 @@ function myMenuFunction(){
   }
 
 
-/* ----- TYPING EFFECT ----- */
+
  var typingEffect = new Typed(".typedText",{
-    strings : ["Designer","Youtuber","Developer"],
+    strings : ["Designer","Gamer","Web Developer"],
     loop : true,
     typeSpeed : 100, 
     backSpeed : 80,
@@ -41,7 +59,7 @@ function myMenuFunction(){
  })
 
 
-/* ----- ## -- SCROLL REVEAL ANIMATION -- ## ----- */
+
  const sr = ScrollReveal({
         origin: 'top',
         distance: '80px',
