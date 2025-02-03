@@ -51,7 +51,7 @@ function myMenuFunction(){
 
 
  var typingEffect = new Typed(".typedText",{
-    strings : ["Designer","Gamer","Web Developer"],
+    strings : ["Designer","Mern Stack developer","Web Developer"],
     loop : true,
     typeSpeed : 100, 
     backSpeed : 80,
