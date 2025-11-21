@@ -41,7 +41,7 @@
             </ul>
         </div>
         <div class="nav-button">
-            <a href="assets/_Resume.pdf" download="my resume">
+            <a href="assets/myresume.pdf" download="my resume">
                 <button class="btn">Download Resume <i class="uil uil-file-alt"></i></button>
             </a>
             
@@ -61,7 +61,7 @@
                 <span>BIG SAM</span>
             </div>
             <div class="featured-name">
-                <p>I'm <span class="typedText"></span></p>
+                <p>I'm a <span class="typedText"></span></p>
             </div>
             <div class="featured-text-info">
                 <p>Experienced frontend developer with a passion for creating visually stunning
@@ -72,7 +72,7 @@
                 <button class="btn blue-btn" onclick="location.href='#contact'">Hire Me</button>
 
                 
-                <a href="assets/_Resume.pdf" download="my resume">
+                <a href="assets/myresume.pdf" download="my resume">
                     <button class="btn">Download Resume <i class="uil uil-file-alt"></i></button>
                 </a>
             </div>
@@ -120,7 +120,7 @@
                     <p>I am well-versed in HTML, CSS, and JavaScript, along with other cutting-edge frameworks and libraries, enabling me to implement interactive and dynamic features seamlessly. My expertise extends to React, PHP, Firebase, Tailwind CSS, Node.js, and Express.js, allowing me to build modern, scalable, and responsive web applications with both front-end and back-end capabilities. Additionally, I have experience working with content management systems (CMS) like WordPress, enhancing website functionality and customization. I am also proficient in version control systems like Git, ensuring efficient collaboration and code management.
                     </p>
                     <div class="about-btn">
-                        <a href="assets/_Resume.pdf" download="my resume" ><button class="btn" >Download resume <i class="uil uil-import" ></i></button></a>
+                        <a href="assets/myresume.pdf" download="my resume" ><button class="btn" >Download resume <i class="uil uil-import" ></i></button></a>
                     </div>
                 </div>
             </div>
@@ -180,32 +180,125 @@
           </div>
        </section>
 
-       
-
-       <section class="section" id="projects">
-          <div class="top-header">
-              <h1>Projects</h1>
-          </div>
-          <div class="project-container">
-            <div class="project-box">
-                <i class="uil uil-briefcase-alt"></i>
-                <h3>Completed</h3>
-                <label>15+ Finished Projects</label>
-            </div>
-            <div class="project-box">
-                <i class="uil uil-users-alt"></i>
-                <h3>Clients</h3>
-                <label>25+ Happy Clients</label>
-            </div>
-            <div class="project-box">
-                <i class="uil uil-award"></i>
-                <h3>Experience</h3>
-                <label>3+ Years in the field</label>
+    <!-- Projects Section (with user-provided Unsplash image URLs and fixed src) -->
+    <section class="section" id="projects">
+      <div class="top-header">
+        <h1>Projects</h1>
+        <span>Some of my featured works</span>
+      </div>
+      <div class="project-cards-container">
+        <!-- Next.js Bank App -->
+        <div class="project-card">
+          <img src="assets/Screenshot.png" alt="Next.js Bank App" class="project-img">
+          <div class="project-content">
+            <h3>Next.js Bank App</h3>
+            <p>Full-stack digital banking platform with secure transfers, beneficiary management, and real-time balance tracking.</p>
+            <div class="project-tech">Next.js, Tailwind CSS, graphQL, MongoDB</div>
+            <div class="project-links">
+              <a href="https://bankapp-eight-liart.vercel.app/" target="_blank" class="btn">Live &rarr;</a>
             </div>
           </div>
-       </section>
+        </div>
+        <!-- Book Store -->
+        <div class="project-card">
+          <img src="assets/Screenshot3.png" alt="Book Store" class="project-img">
+          <div class="project-content">
+            <h3>Book Store</h3>
+            <p>Browse, search, and manage books with user authentication and CRUD operations.</p>
+            <div class="project-tech">HTML, CSS, JavaScript, React, Firebase</div>
+            <div class="project-links">
+              <a href="https://bookstore-2-osnr.onrender.com/" target="_blank" class="btn">Live &rarr;</a>
+            </div>
+          </div>
+        </div>
+        <!-- E-commerce Store -->
+        <div class="project-card">
+          <img src="assets/Screenshot2.png" alt="E-commerce Store" class="project-img">
+          <div class="project-content">
+            <h3>E-commerce Store</h3>
+            <p>Modern online store with product listings, cart, and checkout. Responsive and user-friendly design.</p>
+            <div class="project-tech">React, CSS, Node.js, Express.js</div>
+            <div class="project-links">
+              <a href="https://fyp-frontend-yls3.onrender.com/" target="_blank" class="btn">Live &rarr;</a>
+            </div>
+          </div>
+        </div>
+        <!-- Note App -->
+        <div class="project-card">
+          <img src="assets/note.png" alt="Note App" class="project-img">
+          <div class="project-content">
+            <h3>Note App</h3>
+            <p>Simple and intuitive note-taking app with real-time updates and cloud sync.</p>
+            <div class="project-tech">JavaScript, React, Firebase</div>
+            <div class="project-links">
+              <a href="https://github.com/BIGSAMOFAFRICA/Notify" target="_blank" class="btn">Code &rarr;</a>
+            </div>
+          </div>
+        </div>
+        <!-- E-voting System -->
+        <div class="project-card">
+          <img src="assets/voting.jpg" alt="E-voting System" class="project-img">
+          <div class="project-content">
+            <h3>E-voting System</h3>
+            <p>Secure online voting platform with real-time result updates and voter authentication.</p>
+            <div class="project-tech">React, Node.js, Express.js, MongoDB</div>
+            <div class="project-links">
+              <a href="https://e-voting-six.vercel.app/" target="_blank" class="btn">Live &rarr;</a>
+            </div>
+          </div>
+        </div>
+        <!-- Bank App -->
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=800&q=80" alt="Bank App" class="project-img">
+          <div class="project-content">
+            <h3>Bank App</h3>
+            <p>Online banking application for managing accounts, transfers, and transaction history.</p>
+            <div class="project-tech">PHP, mySQL</div>
+            <div class="project-links">
+              <a href="https://github.com/BIGSAMOFAFRICA/bank-app" target="_blank" class="btn">Code &rarr;</a>
+            </div>
+          </div>
+        </div>
+        <!-- 3D Website -->
+        <div class="project-card">
+          <img src="assets/Screenshot4.png" alt="3D Website" class="project-img">
+          <div class="project-content">
+            <h3>3D Website</h3>
+            <p>Immersive 3D web experience using modern JavaScript libraries and animations.</p>
+            <div class="project-tech">Three.js, React, CSS</div>
+            <div class="project-links">
+              <a href="https://3dwebapp-rebuild.vercel.app/" target="_blank" class="btn">Live &rarr;</a>
+            </div>
+          </div>
+        </div>
+        <!-- Anonymous Wall Note -->
+        <div class="project-card">
+          <img src="assets/anonymous.png" alt="Anonymous Wall Note" class="project-img">
+          <div class="project-content">
+            <h3>Anonymous Wall Note</h3>
+            <p>Share and read anonymous notes on a public wall. Real-time updates and moderation features.</p>
+            <div class="project-tech">React, Firebase, Node.js</div>
+            <div class="project-links">
+              <a href="https://github.com/BIGSAMOFAFRICA/sticky-verse-boards" target="_blank" class="btn">Code &rarr;</a>
+            </div>
+          </div>
+        </div>
+        <!-- Budget App -->
+        <div class="project-card">
+          <img src="assets/budget.png" alt="Budget App" class="project-img">
+          <div class="project-content">
+            <h3>Budget App</h3>
+            <p>Track your expenses and manage your budget with insightful analytics and charts.</p>
+            <div class="project-tech">React, Chart.js, CSS</div>
+            <div class="project-links">
+              <a href="https://budget-app-kappa-tan.vercel.app/" target="_blank" class="btn">Live &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-       
+    <!-- Existing Projects summary boxes (keep for stats) -->
 
        <section class="section" id="contact">
           <div class="top-header">
@@ -220,22 +313,24 @@
                     <p><i class="uil uil-phone"></i> Tel: +234 707 519 998</p>
                 </div>
              </div>
-             <div class="col">
-                <form id="contact-form">
-                    <div class="form-control">
-                        <div class="form-inputs">
-                            <input type="text" class="input-field" placeholder="Name" name="name" required>
-                            <input type="email" class="input-field" placeholder="Email" email="email" required>
-                        </div>
-                        <div class="text-area">
-                            <textarea placeholder="Message" name="message" required></textarea>
-                        </div>
-                        <div class="form-button">
-                            <button type="submit" class="btn">Send <i class="uil uil-message"></i></button>
-                        </div>
-                    </div>
-                </form>
+<div class="col">
+    <form id="contact-form">
+        <div class="form-control">
+            <div class="form-inputs">
+                <input type="text" class="input-field" placeholder="Name" name="from_name" required>
+              <input type="email" class="input-field" placeholder="Email" name="from_email" required>
+
             </div>
+            <div class="text-area">
+                <textarea placeholder="Message" name="message" required></textarea>
+            </div>
+            <div class="form-button">
+                <button type="submit" class="btn">Send <i class="uil uil-message"></i></button>
+            </div>
+        </div>
+    </form>
+</div>
+
                 </div>
              </div>
           </div>
